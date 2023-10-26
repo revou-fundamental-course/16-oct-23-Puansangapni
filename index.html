@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>My Mini Project</title>
+</head>
+<body>
+
+    <!-- ---------------------------------------------------------------bagian navigasi-------------------------------------------------------------  -->
+
+    <header class="header">
+        <div class="nav-logo">
+        </div>
+
+        <nav class="nav">
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#profile" class="nav-item">Our Profile</a>
+            <a href="#portofolio" class="nav-item">Portofolio</a>
+            <a href="#message-us" class="nav-item">Message Us</a>
+        </nav>
+    </header>
+
+    <!-- ------------------------------------------------------------bagian home--------------------------------------------------------------------  -->
+
+    <section id="home" class="banner">
+        <div class="greetings">
+            <h1>Hai, <span id="nama"></span></h1>
+            <h2>Welcome to YG Entertainment</h2>
+
+            <div class="gambar-depan">
+                <div class="slides">
+
+                    <span id="slide-1"></span>
+                    <span id="slide-2"></span>
+                    <span id="slide-3"></span>
+                    <span id="slide-4"></span>
+                    <span id="slide-5"></span>
+
+                    <div class="background">
+                        <img class="img-slideshow" src="./Asset/treasure.jpg">
+                        <img class="img-slideshow" src="./Asset/Jennie.jpg">
+                        <img class="img-slideshow" src="./Asset/akmutopia.jpg">
+                        <img class="img-slideshow" src="./Asset/akmulovelee.jpg">
+                        <img class="img-slideshow" src="./Asset/TSbona.jpg">
+                    </div>
+                </div>
+            </div>            
+            <!-- navigasi -->
+            <div class="navigations">
+                <a href="#slide-1">1</a>
+                <a href="#slide-2">2</a>
+                <a href="#slide-3">3</a>
+                <a href="#slide-4">4</a>
+                <a href="#slide-5">5</a>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ---------------------------------------------------------bagian profile/headquarters---------------------------------------------------------------  -->
+
+    <section id="profile" class="headquarters">
+        <h1>Our Headquarters</h1>
+        <div class="cabang">
+            <div class="hq-items">
+                <div id="seoul" class="circle">
+                    <p>Korea Selatan</p>
+                </div>
+                <div id="jepang" class="circle">
+                    <p>Jepang</p>
+                </div>
+                <div id="usa" class="circle">
+                    <p>USA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---about yg---  -->
+
+    <section id="yg-about" class="about">
+        <div class="judul-yg">
+            <h2>About Us</h2>
+        </div>
+        <div class="aboutyg_img diagram">
+            <img src="./Asset/diagram.gif">
+        </div>
+        
+        <div class="aboutyg_txt">
+            <div class="aboutyg_col colE">
+                <p class="aboutyg_col_tit">YG Entertainment</p>
+                <p>YG Entertainment maintains the capability for unmatchable new development and production. Since 1996, YG Entertainment has produced the leading artists, such as Jinusean, 1TYM, SE7EN, BIGBANG, 2NE1, Lee Hi, etc., to the music world. Through the new casting potential, unmatched YG structured training, and world class in-house producing system, YG has been able to train artists to lead the global market. YG Entertainment has a desire to become the most preferred brand.</p>
+            </div>
+                                            
+            <div style="float:left; width:35px;">&nbsp;</div>
+                <div class="aboutyg_col colE">
+                    <p class="aboutyg_col_tit">YG Entertainment</p>
+                    <p>Through the OSMU strategy, YG Entertainment is expanding its diversified contents business model. YG is leading the initiative for digital music that can be adapted to a variety of platforms and devices, going beyond the basic album and concert activities. Besides this, it is extending its diversified management business and making a business model for the world concerning advertisements, broadcasting, characters, games, etc. YG Entertainment is a pioneer in the domain of new contents business.</p>
+                </div>
+                                            
+            <div style="float:left; width:35px;">&nbsp;</div>
+                <div class="aboutyg_col colE">
+                    <p class="aboutyg_col_tit">YG Entertainment</p>
+                    <p>YG Entertainment is aiming for the world. Through the joint venture with the top Japanese entertainment company AVEX in 2011, after already advancing into the Japanese market in 2007 by establishing YG Japan, YG was able to establish the solo label YGEX in an effort to more aggressively advance in the Japanese market. Once establishing their YG Asia headquarters in Hong Kong, YG was able to widen their influence to the larger mainland China and Taiwan. Through targeting the pop market’s natives of the United States and Europe, tangible results can be envisioned by using a differentiated approach.</p>
+                </div>
+            </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------bagian portofolio------------------------------------------------------  -->
+
+    <section id="portofolio" class="portofolio">
+        <div class="judul">
+            <h1>Portofolio</h1>
+        </div>
+
+        <div class="about">
+            <h3>Tentang Saya</h3>
+            <img src="./Asset/foto.png" alt="Foto Profil" class="profile-image">
+            <p>Selamat datang di portofolio saya. Saya seorang mahasiswi teknik Informatika di Universitas Sam Ratulangi Manado.</p>
+        </div>
+    
+        <div class="contact">
+            <h3>Hubungi Saya</h3>
+            <p>Silakan hubungi saya di
+                puansangapni@gmail.com.</p>
+        </div>
+    
+        <div class="skills">
+            <h3>Kemampuan</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ---------------------------------------------------bagian message us-------------------------------------------------------  -->
+
+    <section id="message-us" class="form">
+        <h1>Message Us</h1>
+
+        <div class="form-message">
+            <div class="form-left">
+                <form id="messageForm">
+                    <table>
+                        <tr>
+                            <td>Nama</td>
+                            <td>:</td>
+                            <td>
+                                <input type="text" id="input-nama" name="input-nama" placeholder="Nama" required>
+
+                        </tr>
+    
+                        <tr>
+                            <td>Tanggal lahir</td>
+                            <td>:</td>
+                            <td>
+                                <input id="tanggal" name="tanggal" type="date" placeholder="Tanggal Lahir" required>
+                            </td> 
+                        </tr>
+    
+                        <tr>
+                            <td>Jenis Kelamin</td>
+                            <td>:</td>
+                            <td>
+                                <label for="l">Laki-laki</label>
+                                <input type="radio" id="l" name="gender" value="L" />
+                                <label for="p">Perempuan</label>
+                                <input type="radio" id="p" name="gender" value="P" />
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td>Pesan</td>
+                            <td>:</td>
+                            <td>
+                                <textarea id="pesan" name="pesan" type="text" rows="6" placeholder="Pesan"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+    
+                    <button type="submit" class="submit-buton">Submit</button>
+                </form>
+            </div>
+    
+            <div class="form-right">
+                <h2>Live Feedback</h2>
+                <div id="feedback"></div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- -------------bagian footer--------------------  -->
+
+    <footer class="footer">
+            <p class="footer-text">made by <span>Puan</span></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

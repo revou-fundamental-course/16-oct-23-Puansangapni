@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* -----------------------------------------------------style bagian navigasi-------------------------------------------------- */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    border-bottom: 2px solid darkslategray;
+    width: 100%;
+}
+
+.nav-logo  {
+    width: 40px;
+    height: 40px;
+    background-image: url('../Asset/yg-logo.jpg'); /* Mengganti latar belakang dengan gambar */
+    background-size: cover; /* Mengatur gambar agar menutupi seluruh area elemen */
+    border-radius: 10px;
+    max-height: 40px;
+}
+
+.nav {
+    display: flex;
+    margin-right: 3em;
+}
+
+.nav-item {
+    /* display: block; */
+    padding: 2px 1em;
+    border: 0.5px solid black;
+    min-width: 60px;
+    text-align: center;  
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+
+}
+
+.nav-item:hover {
+    background: black;
+    color: white;
+}
+
+/* ------------------------------------------style bagian home----------------------------------------------------  */
+
+.banner {
+    border-bottom: 1px solid black;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.greetings {
+    margin-top: 2em;
+    margin-left: 5em;
+}
+
+/* ------membuat style gambar------- */
+
+.background {
+    display: flex;
+    width: 100%;
+    transition: 2s;
+}
+
+.background img {
+    width: 100%;
+}
+
+.gambar-depan {
+    width: 900px;
+    margin: auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#slide-1:target ~ .background {
+    margin-left: 0px;
+}
+
+#slide-2:target ~ .background {
+    margin-left: -100%;
+}
+
+#slide-3:target ~ .background {
+    margin-left: -200%;
+}
+
+#slide-4:target ~ .background {
+    margin-left: -300%;
+}
+
+#slide-5:target ~ .background {
+    margin-left: -400%;
+}
+
+.navigations a{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: lightgray;
+    font-size: 0px;
+    border-radius: 50%;
+    margin: 3px;
+    transition: 1s;
+}
+
+.navigations a:hover {
+    background-color: #333;
+}
+
+.navigations {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    margin-top: -50px;
+}
+
+/* ----------------------------------style bagian profile/headquarters------------------------------------------------  */
+
+.headquarters {
+    margin-left: 5em;
+    padding: 3em;
+    border-bottom: 1px solid darkslategrey;
+    text-align: center;
+}
+
+.hq-items {
+    padding: 2em 5em;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+.circle {
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.circle p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+#seoul {
+    width: 150px;
+    height: 150px;
+    background-image: url('../Asset/seoul.jpg'); 
+    background-size: cover;
+    border-radius: 50x;
+}
+
+#jepang {
+    width: 150px;
+    height: 150px;
+    background-image: url('../Asset/jepang.jpg'); 
+    background-size: cover;
+    border-radius: 50x;
+}
+
+#usa {
+    width: 150px;
+    height: 150px;
+    background-image: url('../Asset/usa.jpg'); 
+    background-size: cover;
+    border-radius: 50x;
+} 
+
+
+/* ------about YG------  */
+
+.judul-yg {
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+div {
+    display: block;
+}
+
+.colE {
+    word-break: break-all;
+}
+
+.aboutyg_col_tit {
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.aboutyg_col {
+    border-top: 2px solid #BE0028;
+    font-size: 10px;
+    text-align: justify;
+    vertical-align: top;
+    line-height: 150%;
+}
+
+.aboutyg_txt {
+    vertical-align: top;
+    font-size: 0;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-left: 5em;
+    margin-right: 3em;
+}
+
+.aboutyg_img.diagram {
+    border-top: 1px solid #C8C8C8;
+}
+
+.aboutyg_img {
+    padding: 50px 0;
+    vertical-align: top;
+}
+
+.aboutyg_txt p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+/* --------------------------------------------style bagian portofolio-----------------------------------------------------  */
+
+/* Header Styles */
+
+.portofolio {
+    text-align: center;
+}
+
+.judul {
+    background-color: #333;
+    padding: 20px 0;
+}
+
+.judul h1 {
+    font-size: 2rem;
+}
+
+/* Section Styles */
+.portofolio div {
+    background-color: #fff;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: 5em;
+    margin-right: 3em;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.about {
+    background-color: #f9f9f9;
+}
+
+.profile-image {
+    max-width: 100px; /* Sesuaikan ukuran gambar profil sesuai kebutuhan */
+    border-radius: 50%;
+}
+
+/* Styling Skills List */
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li::before {
+    content: "✓ ";
+}
+
+/* ----------------------------------------------------style bagian message us------------------------------------------------  */
+
+#message-us {
+    border-top: 1px solid darkslategray;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: 5em;
+    margin-right: 3em;
+}
+
+.form-message{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.form-message div {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    width: 100%;
+    cursor: pointer;
+}
+
+.form-left {
+    flex: 1;
+}
+
+.form-right {
+    flex: 1;
+    padding: 20px;
+}
+
+.submit-buton{
+    background-color: black;
+    color: white;
+    padding: 10px 150px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* CSS untuk membuat textarea lebarnya sama dengan input lainnya */
+
+form td {
+    vertical-align: top;
+}
+
+form input[type="text"],
+form input[type="date"],
+form textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* CSS untuk membuat radio button di gender rata (horizontal) */
+.form-message .gender-label {
+    display: flex;
+    align-items: center;
+}
+
+form input[type="radio"] {
+    margin-right: 5px; /* Menambahkan jarak antara radio button dan labelnya */
+}
+
+/* CSS untuk mengatur label gender agar tetap rata (horizontal) */
+form label {
+    display: inline-block;
+    width: 90px; /* Sesuaikan lebar label sesuai kebutuhan */
+}
+
+/* ---------------------------------------style bagian footer--------------------------------------------------------  */
+
+.footer-text {
+    color: gray;
+    font-size: small;
+    text-align: right;
+}
+
+/* ------------------------------------------part membuat website responsive-----------------------------------------------------  */
+
+@media screen and (max-width: 800px) {
+
+    /* -----------responsive bagian navigasi------------  */
+
+    .header {
+        flex-direction: column;
+    }
+
+    .nav {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-logo {
+        margin-bottom: 14px;
+    }
+
+    /* ---------------------------------------responsive untuk bagian home----------------------------------------------------  */
+
+    .greetings {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    .gambar-depan {
+        width: 90%;
+    }
+
+    /* -----------------------------------------responsive bagian profile----------------------------------------------  */
+
+    .headquarters {
+        margin-left: 2em;
+    }
+
+    .hq-items {
+        flex-direction: column;
+    }
+
+    .circle {
+        margin-bottom: 100px;
+    }
+
+    /* ---responsive about yg---  */
+
+    .aboutyg_col {
+        display: inline-block;
+        width: 28%;
+        margin-right: 8%;
+    }
+
+    .aboutyg_txt {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* -----------------------------------responsive bagian portofolio------------------------------------------------  */
+
+    .portofolio div {
+        margin-left: 2em;
+    }
+
+    /* --------------------------------------------responsive bagian message us------------------------------------------  */
+
+    #message-us {
+        margin-left: 2em;
+    }
+
+    .form-message {
+        flex-direction: column;
+    } 
+}
+
+@media (min-width: 721px) {
+    .aboutyg_txt {
+        max-width: 760px;
+        padding-bottom: 100px;
+        margin-left: 2em;
+    }
+
+    .aboutyg_img {
+        text-align: center;
+    }
+} 
+
+@media (max-width: 720px) {
+    .aboutyg_txt {
+        width: 100%;
+        margin: auto;
+        vertical-align: top;
+        font-size: 14px;
+        margin-left: 5em;
+    }
+
+    .aboutyg_img.diagram {
+        display: none;
+    }
+}
